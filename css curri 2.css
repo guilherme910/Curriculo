@@ -1,0 +1,101 @@
+/* Estilo geral da página com design dark */
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+
+
+body {
+    font-family: Audiowide, sans-serif;
+    background-color: #121212;
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), /* Gradiente escuro */
+    url(https://assets-blog.hostgator.com.br/wp-content/uploads/2022/01/source-gcf3182850_1920.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: #cccccc;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilizando a barra de navegação */
+nav {
+    background-color: #1f1f1f;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #cccccc;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #153788;
+}
+
+/* Estilo das seções */
+section {
+    padding: 50px;
+    text-align: left;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #153788;
+}
+
+p, ul {
+    font-size: 1.2rem;
+    color: #cccccc;
+}
+
+a {
+    color: #153788;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo específico para o layout de certificados */
+section#certificados ul {
+    display: flex;
+    flex-wrap: wrap; /* Permite que as imagens "quebrem" em uma nova linha se necessário */
+    list-style-type: none;
+    padding: 0;
+    
+}
+
+section#certificados li {
+    text-align: center; /* Centraliza o texto com a imagem */
+    
+}
+
+
+
+/* Adiciona espaçamento ao redor de cada imagem */
+section#certificados img {
+    display: block;
+    margin: 0 15px 20px 15px;   /* Espaçamento de 15px nas laterais e 20px abaixo das imagens */
+    max-width: 100%;
+    height: auto;
+    transition: all 0.3s ease; /* Transição suave para o efeito bloom */
+}
+
+section#certificados img:hover {
+    transform: scale(1.1); /* Aumenta levemente o tamanho da imagem */
+}
+
